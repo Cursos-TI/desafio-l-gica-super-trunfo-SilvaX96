@@ -1,32 +1,45 @@
 # Super Trunfo das Cidades
 
-Esse é um joguinho estilo Super Trunfo, onde você compara cartas de cidades brasileiras com atributos como população, área, PIB, pontos turísticos e densidade populacional.
+## Sobre o Projeto
+Este projeto é uma versão estilo "Super Trunfo" usando cidades brasileiras. Cada carta representa uma cidade com diversos atributos como população, área, PIB e pontos turísticos. A ideia é comparar duas cidades com base em dois atributos escolhidos pelo jogador e ver quem vence a rodada!
 
-## Funcionalidades
+O jogo roda no terminal e foi feito para praticar conceitos de **structs**, **menus**, **switch**, **if-else**, **operador ternário** e mais.
 
-- Usar cartas pré-cadastradas (São Paulo e Rio de Janeiro)
-- Criar novas cartas digitando os dados
-- Comparar atributos escolhidos pelo jogador via menu interativo
-- Regras especiais para densidade populacional: vence quem tiver menor valor
+## Requisitos Atendidos 
 
-## Como compilar
+### Funcionais:
+- Escolha de dois atributos diferentes para comparação.
+- Comparação com múltiplos atributos (com exceção para densidade demográfica).
+- Soma dos atributos comparados.
+- Empates tratados corretamente.
+- Menus dinâmicos que impedem repetição de atributos.
+- Exibição clara do resultado da rodada.
 
-Se estiver usando Linux/macOS com gcc:
+### Não Funcionais:
+- Interface simples e amigável (tudo no terminal com instruções).
+- Código com boa performance (comparações rápidas).
+- Estrutura organizada, com comentários explicativos.
+- Tratamento de erros e entradas inválidas com `if` e `default` nos `switch`.
 
-```bash
-gcc -o super_trunfo super_trunfo.c
-No Windows com MinGW:
+## Novidades e Melhorias 
+- Comentários explicativos em linguagem descontraída e acessível.
+- Cidades pré-carregadas: **Campo Grande (MS)** e **Cuiabá (MT)**.
+- Simplificação de saídas com símbolos como `km2` e `milhões` em vez de `km²` e `milhões` com unicode (mais fácil pra quem tá começando).
+- Lógica clara pra mostrar qual cidade venceu cada atributo.
+- Tudo pronto para expandir o jogo com novos recursos!
 
-bash
+1. Compile o código com `gcc` ou outra IDE C.
+   ```bash
+   gcc super_trunfo.c -o super_trunfo
+   ./super_trunfo
+   ```
+2. Escolha se quer usar as cartas pré-cadastradas ou digitar novas.
+3. Compare dois atributos e veja quem ganha!
 
-gcc -o super_trunfo.exe super_trunfo.c
+## Possíveis Expansões 
+- Várias rodadas com placar.
+- Modo multiplayer.
+- Salvar/ler cartas de arquivos.
+- Interface gráfica futuramente.
 
-
- ***Uso
-Escolha se quer usar cartas prontas ou cadastrar novas
-
-Caso cadastre novas, siga as instruções no terminal para preencher os dados
-
-Depois escolha o atributo para comparar as cartas
-
-Para sair do menu de comparação, escolha a opção 0
+## Fim
